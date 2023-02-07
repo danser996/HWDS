@@ -4,7 +4,7 @@ Created on Mon Feb  6 20:05:55 2023
 
 @author: _danser96
 
-home work, M1C1
+HomeWork, M1C1
 """
 
 from functools import reduce
