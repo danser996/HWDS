@@ -23,10 +23,9 @@ def NumeroBinario(numero):
         while bandera:
             resto = aux % 2
             aux = aux // 2
-            lista.append(resto)
+            lista.insert(0, resto)
             if aux == 0:
                 bandera = False
-        lista = list(reversed(lista))
         return int(reduce(lambda x, y: x + str(y), lista, ''))
     else:
         return None
