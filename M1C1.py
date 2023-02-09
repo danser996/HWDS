@@ -42,7 +42,7 @@ def FraccionABinario(numero):
             if aux == 1:
                 bandera = False
             aux -= int(aux)
-        return reduce(lambda x, y: x + str(y), lista, '0.')
+        return reduce(lambda x, y: x + str(y), lista, '0.'), lista
     else:
         return None
 
@@ -51,5 +51,7 @@ for i in range(100):
     print(f'Numero {i} en binario: {NumeroBinario(i)}')
 print()
 lista = [1/2, 1/3, 1/4, 1/5, 1/6, 1/7, 1/8, 1/9]
-for i in lista:
-    print(f'Numero {i} en binario: {FraccionABinario(i)}')
+# for i in lista:
+#     print(f'Numero {i} en binario: {FraccionABinario(i)}')
+
+bina, lista = FraccionABinario(0.3)
