@@ -47,7 +47,7 @@ plt.scatter(df2.latitude,
             marker='*',
             linewidths=4,
             color='r')
-plt.title('longitud VS latitude')
+plt.title('Coordenada de los hospitales')
 plt.xlabel('latitude')
 plt.ylabel('longitude')
 for i in range(len(df2.label)):
