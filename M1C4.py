@@ -38,7 +38,7 @@ df2.latitude = df2.latitude.astype(float)
 df2.longitude = df2.longitude.astype(float)
 print(df2.head())
 print()
-#crear csv que pide el ejercicio
+# crear csv que pide el ejercicio
 df2.to_csv('DF_HW4.csv')
 
 # practica de matplotlib, grafciar longitud vs latitude
@@ -50,5 +50,9 @@ plt.scatter(df2.latitude,
 plt.title('longitud VS latitude')
 plt.xlabel('latitude')
 plt.ylabel('longitude')
+for i in range(len(df2.label)):
+    plt.text(df2.latitude[i],
+             df2.longitude[i],
+             df2.label[i])
 plt.grid()
 plt.show()
