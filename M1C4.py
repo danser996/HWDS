@@ -18,7 +18,7 @@ con la dirección del hospital, y el campo label con el nombre del hospital.
 # leer archivo csv para dataframe
 from matplotlib import pyplot as plt
 import pandas as pd
-df = pd.read_csv(r'D:\DataScience\Bootcamp\M1\Clase 04\hospitales2.csv')
+df = pd.read_csv('hospitales2.csv')
 print(df.head())
 print()
 df.WKT = df.WKT.str.replace('POINT ', '')
